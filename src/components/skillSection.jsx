@@ -6,9 +6,15 @@ import SectionLine from "./SectionLine";
 import SkillsCard from "./skillsCard";
 
 const skills = {
-  frontend: [
-    { nama: "HTML", icon: "https://cdn.simpleicons.org/html5/E34F26" },
-    { nama: "CSS", icon: "https://cdn.simpleicons.org/css/1572B6" },
+  frontend : [
+    {
+      nama: "HTML",
+      icon: "https://cdn.simpleicons.org/html5/E34F26"
+    },
+    {
+      nama: "CSS",
+      icon: "https://cdn.simpleicons.org/css/1572B6"
+    },
     {
       nama: "Tailwind",
       icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
@@ -23,7 +29,6 @@ const skills = {
     { nama: "PHP", icon: "https://cdn.simpleicons.org/php/777BB4" },
     { nama: "MySQL", icon: "https://cdn.simpleicons.org/mysql/4479A1" },
   ],
-
   tools: [
     { nama: "Git", icon: "https://cdn.simpleicons.org/git/F05032" },
     { nama: "GitHub", icon: "https://cdn.simpleicons.org/github/FFFFFF" },
@@ -39,6 +44,7 @@ const categories = [
   { label: "Backend", items: skills.backend },
   { label: "Tools", items: skills.tools },
 ];
+
 const SkillSection = () => {
   return (
     <div className="skills-section">
@@ -51,9 +57,9 @@ const SkillSection = () => {
       </div>
       {categories.map((cat) => {
         return (
-          <div>
+          <div> 
             <div data-aos="fade-right" data-aos-duration={1000 + 100 * cat}>
-              <SectionLine text={cat.label} />
+            <SectionLine text={cat.label} />
             </div>
             <br />
             <div className="skills-grid">
@@ -66,7 +72,6 @@ const SkillSection = () => {
                     <SkillsCard
                       language={item.nama}
                       img={item.icon}
-                      {...item}
                     />
                   </div>
                 );

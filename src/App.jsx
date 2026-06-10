@@ -52,7 +52,7 @@ function App() {
       <div
         style={{
           position: "relative",
-          height: "100vh",
+          minHeight: "100vh",
           zIndex: 1,
         }}
         id="home"

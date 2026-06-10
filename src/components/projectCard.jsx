@@ -1,9 +1,9 @@
 import React from "react";
 import img from "../image/final-hero.jpg";
 import "./comps.css";
-import img1 from "../image/hero.jpeg";
-import img2 from "../image/third-hero.jpg";
-import img3 from "../image/second-hero.jpg";
+import img1 from "../image/tuhaha.png";
+import img2 from "../image/nengnanum.png";
+import img3 from "../image/bokurce.png";
 
 const projects = [
   {
@@ -37,7 +37,7 @@ const ProjectCard = () => {
     <div>
       {projects.map((cat, index) => (
         <a href={cat.link} key={index}>
-        <div className="project-card" data-aos="zoom-in-up" data-aos-duration='1000'>
+        <div className="project-card " data-aos="zoom-in-up" data-aos-duration='1000'>
           <div className="project-kiri">
             <div className="label">{String(index + 1).padStart(2, "0")}</div>
             <div className="judul">

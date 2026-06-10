@@ -97,7 +97,7 @@
 .mp-card {
   font-family: "Rajdhani", sans-serif;
   width: 20rem;
-  background: linear-gradient(145deg, #0d1b2a 0%, #0a1628 60%, #061020 100%);
+  background-color: transparent;
   border: 1px solid rgba(0, 200, 255, 0.15);
   border-radius: 16px;
   padding: 1rem;
@@ -189,7 +189,7 @@
 
 .mp-label {
   font-family: "Rajdhani", sans-serif;
-  font-size: 10px;
+  font-size: .7rem;
   letter-spacing: 0.22em;
   color: rgba(0, 200, 255, 0.6);
   text-transform: uppercase;
@@ -284,8 +284,9 @@
   transition:
     color 0.2s,
     transform 0.15s;
-  font-size: 18px;
+  font-size:25px;
   line-height: 1;
+  border: none;
 }
 
 .mp-ctrl:hover {
@@ -297,15 +298,15 @@
 
 .mp-ctrl-label {
   font-family: "Rajdhani", sans-serif;
-  font-size: 9px;
+  font-size: .9rem;
   letter-spacing: 0.06em;
   color: inherit;
   line-height: 1;
 }
 
 .mp-play {
-  border: 1px solid rgba(0, 200, 255, 0.35);
-  background: rgba(0, 200, 255, 0.08);
+  border: none;
+  background: transparent;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -381,6 +382,7 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+
   .project-kiri {
     display: flex;
     gap: 2rem;
@@ -408,6 +410,7 @@
       -o-transition: 0.3s;
     }
   }
+  
   .project-kanan {
     gap: 2rem;
     color: rgba(255, 255, 255, 0.1);
@@ -415,7 +418,7 @@
     display: flex;
     img {
       z-index: 1;
-      aspect-ratio: 16/10;
+      aspect-ratio:20/10;
       object-fit: cover;
       width: 18rem;
       border-radius: 20px;
@@ -437,11 +440,11 @@
 
 .project-card:hover {
   background-color: rgba(0, 213, 255, 0.01);
-
   .label,
   i,
   h1 {
     color: #00d4ff;
+    z-index: 1;
   }
 }
 /* $ */
