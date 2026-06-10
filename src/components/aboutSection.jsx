@@ -2,10 +2,10 @@ import React from "react";
 import ScrollReveal from "./textScroll";
 import Stack from "./galerySlide";
 import MusicPlayer from "./music";
-import img3 from "../image/third-hero.jpg";
+import img3 from "../image/foto3.jpeg";
 import img1 from "../image/hero.jpeg";
-import img2 from "../image/overlay.jpg";
-import img4 from "../image/final-hero.jpg";
+import img2 from "../image/foto2.jpeg";
+import img4 from "../image/foto4.jpeg";
 
 const About = () => {
   const images = [img1, img2, img3, img4];
