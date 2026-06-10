@@ -31,7 +31,7 @@ const media = [
     {
         label: 'LinkedIn',
         icon: 'ti ti-brand-linkedin',
-        link : 'https://www.linkedin.com/in/achel-sahetapy-89a4363a5/'
+        link : 'https://www.linkedin.com/in/marcelino-sahetapy/'
     }
 ]
 
