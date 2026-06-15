@@ -18,8 +18,10 @@ const originToFlip = origin => {
 
 const SideRays = ({
   speed = 2.5,
-  rayColor1 = '#0850ea',
-  rayColor2 = '#96c8ff',
+  rayColor1 = '#c9a227',
+  rayColor2 = '#7a5b12',
+  // rayColor1 = '#0850ea',
+  // rayColor2 = '#96c8ff',
   intensity = 1.4,
   spread = 2,
   origin = 'top-right',
