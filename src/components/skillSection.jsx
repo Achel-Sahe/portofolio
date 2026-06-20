@@ -16,10 +16,6 @@ const skills = {
       icon: "https://cdn.simpleicons.org/css/1572B6"
     },
     {
-      nama: "Tailwind",
-      icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
-    },
-    {
       nama: "JavaScript",
       icon: "https://cdn.simpleicons.org/javascript/F7DF1E",
     },
