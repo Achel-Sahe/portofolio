@@ -1,6 +1,6 @@
 :root {
-  --biru:  230, 194, 0; 
-  --dark-biru:  156, 127, 0; 
+  --gold:  230, 194, 0; 
+  --dark-gold:  156, 127, 0; 
   --itam: 11, 11, 11;
   --darkgrey: 17, 17, 17;
   --grey: 158, 158, 158;
@@ -13,6 +13,118 @@
   height: 100%;
 }
 /*$ particels end  */
+
+/* # welcome overlay */
+.welcome-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+}
+
+.welcome-panel {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-panel-left {
+  background-color: rgb(var(--itam));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.welcome-panel-right {
+  background-color: rgb(var(--itam));
+  z-index: -1;
+}
+
+.welcome-dots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.welcome-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(var(--gold), 0.5);
+  animation: welcomeFloat linear infinite;
+}
+
+@keyframes welcomeFloat {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+}
+
+.welcome-inner {
+  text-align: center;
+  padding: 0 5%;
+  perspective: 600px;
+}
+
+.welcome-count {
+  display: block;
+  font-family: "Rajdhani", "Times New Roman", sans-serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  color: rgba(var(--gold), 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.welcome-tag {
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  color: rgb(var(--gold));
+  margin-bottom: 1rem;
+}
+
+.welcome-name {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: clamp(3rem, 10vw, 6rem);
+  letter-spacing: 0.4rem;
+  color: rgb(var(--putih));
+  text-shadow: 0 0 40px rgba(var(--gold), 0.35);
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-letter {
+  display: inline-block;
+  color: rgb(var(--gold));
+}
+
+.welcome-line {
+  width: 6rem;
+  height: 2px;
+  margin: 1.5rem auto;
+  background-color: rgb(var(--biru));
+  transform-origin: center;
+}
+
+.welcome-greet {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  color: rgba(var(--putih), 0.7);
+}
 
 /* *hero section */
 .side-rays-container {
@@ -107,7 +219,7 @@
   font-family: "Rajdhani", sans-serif;
   width: 20rem;
   background-color: transparent;
-  border: 1px solid rgba(var(--biru), 0.15);
+  border: 1px solid rgba(var(--gold), 0.15);
   border-radius: 16px;
   padding: 1rem;
   display: flex;
@@ -116,7 +228,7 @@
   position: relative;
   overflow: hidden;
   box-shadow:
-    0 0 0 1px rgba(var(--biru), 0.05),
+    0 0 0 1px rgba(var(--gold), 0.05),
     0 20px 60px rgba(0, 0, 0, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
@@ -131,7 +243,7 @@
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(var(--biru), 0.06) 0%,
+    rgba(var(--gold), 0.06) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -147,7 +259,7 @@
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(var(--biru), 0.05) 0%,
+    rgba(var(--gold), 0.05) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -167,7 +279,7 @@
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background: rgba(var(--biru), 0.4);
+  background: rgba(var(--gold), 0.4);
   animation: floatDot linear infinite;
 }
 
@@ -200,7 +312,7 @@
   font-family: "Rajdhani", sans-serif;
   font-size: .7rem;
   letter-spacing: 0.22em;
-  color: rgba(var(--biru), 0.6);
+  color: rgba(var(--gold), 0.6);
   text-transform: uppercase;
   margin: 0 0 4px;
 }
@@ -244,8 +356,8 @@
   height: 100%;
   background: linear-gradient(
     90deg,
-    rgba(var(--dark-biru), 0.8),
-    rgba(var(--biru), 0.9)
+    rgba(var(--dark-gold), 0.8),
+    rgba(var(--gold), 0.9)
   );
   border-radius: 99px;
   position: relative;
@@ -261,8 +373,8 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgb(var(--biru));
-  box-shadow: 0 0 6px rgba(var(--biru), 0.8);
+  background: rgb(var(--gold));
+  box-shadow: 0 0 6px rgba(var(--gold), 0.8);
 }
 
 .mp-times {
@@ -299,7 +411,7 @@
 }
 
 .mp-ctrl:hover {
-  color: rgba(var(--biru), 0.85);
+  color: rgba(var(--gold), 0.85);
 }
 .mp-ctrl:active {
   transform: scale(0.88);
@@ -325,14 +437,14 @@
     border-color 0.2s,
     transform 0.15s,
     box-shadow 0.2s;
-  color: rgba(var(--biru), 0.9);
+  color: rgba(var(--gold), 0.9);
   font-size: 18px;
 }
 
 .mp-play:hover {
-  background: rgba(var(--biru), 0.16);
-  border-color: rgba(var(--biru), 0.6);
-  box-shadow: 0 0 16px rgba(var(--biru), 0.25);
+  background: rgba(var(--gold), 0.16);
+  border-color: rgba(var(--gold), 0.6);
+  box-shadow: 0 0 16px rgba(var(--gold), 0.25);
 }
 
 .mp-play:active {
@@ -448,11 +560,11 @@
 }
 
 .project-card:hover {
-  background-color: rgba(var(--biru), 0.01);
+  background-color: rgba(var(--gold), 0.01);
   .label,
   i,
   h1 {
-    color: rgb(var(--biru));
+    color: rgb(var(--gold));
     z-index: 1;
   }
 }

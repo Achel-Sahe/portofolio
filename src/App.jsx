@@ -10,6 +10,7 @@ import SkillSection from "./components/skillSection";
 import Project from "./components/projectSection";
 import ProjectCard from "./components/projectCard";
 import ContactSection from "./components/contactSection";
+import WelcomeOverlay from "./components/welcomeOverlay";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 900, once: false, offset: 0, delay: 0 });
@@ -38,6 +39,7 @@ function App() {
           pixelRatio={1}
         />
       </div>
+      <WelcomeOverlay/>
       <div
         style={{
           position: "fixed",
