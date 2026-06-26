@@ -188,22 +188,31 @@ a {
 /* hero */
 .hero-section {
   width: 90%;
-  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  left: 50%;
+}
+.right-about-stack {
+  width: 25rem;
+  height: 25rem;
+  flex-shrink: 0;
 }
 
+
 .text-hero {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   color: rgb(var(--putih));
   z-index: 9999;
   display: grid;
   width: 33rem;
   gap: 1.5rem;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
 }
 .text-hero button {
   padding: 1rem 1.3rem;
@@ -282,6 +291,7 @@ a {
 .about-app .about-wrapper {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   min-height: 100vh;
   padding: 8rem 10%;
@@ -289,23 +299,11 @@ a {
   background-color: rgb(var(--darkgrey));
   position: relative;
   z-index: 4;
+  .left {
+    font-size: 50px;
+  }
 }
-.about-app .about-wrapper .left-about {
-  width: 60%;
-  text-align: center;
-}
-.about-app .about-wrapper .right-about {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  width: 25rem;
-}
-.right-about-stack {
-  width: 25rem;
-  height: 25rem;
-  flex-shrink: 0;
-}
+
 .right-about-music {
   width: 100%;
 }
@@ -684,23 +682,10 @@ a {
   }
 
   /* about */
-  .about-app .about-wrapper {
-    flex-direction: column;
-    padding: 5rem 5%;
-    gap: 3rem;
-    align-items: center;
-  }
-  .about-app .about-wrapper .left-about {
-    width: 100%;
-  }
-  .about-app .about-wrapper .right-about {
-    width: 100%;
-    max-width: 22rem;
-  }
-  .about-app .about-wrapper .right-about-stack {
-    width: 100%;
-    max-width: 22rem;
-    height: 22rem;
+  .right-about-stack {
+    max-width: 16rem;
+    height: 16rem;
+    margin-top: 5rem;
   }
   .about-app .about-wrapper .right-about-music {
     width: 100%;

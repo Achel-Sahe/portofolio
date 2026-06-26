@@ -21,7 +21,6 @@ const TextHero = () => {
           <img src="https://cdn.simpleicons.org/css/1572B6" />
           <img src="https://cdn.simpleicons.org/javascript/F7DF1E" />
           <img src="https://cdn.simpleicons.org/react/61DAFB" />
-          <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" />
           <img src="https://cdn.simpleicons.org/github/FFFFFF" />
         </div>
       </div>

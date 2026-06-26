@@ -11,7 +11,7 @@ const About = () => {
   const images = [img1, img2, img3, img4];
   return (
     <div className="about-wrapper" id="about">
-      <div className="left-about">
+      <div className="left">
         <ScrollReveal
           baseOpacity={0}
           enableBlur
@@ -22,7 +22,7 @@ const About = () => {
           design and smooth interactions
         </ScrollReveal>
       </div>
-      <div className="right-about">
+      {/* <div className="right-about">
         <div className="right-about-stack" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="300">
           <Stack
             randomRotation
@@ -44,7 +44,7 @@ const About = () => {
         <div className="right-about-music" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
           <MusicPlayer />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

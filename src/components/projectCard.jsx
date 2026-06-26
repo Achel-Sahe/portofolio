@@ -10,7 +10,7 @@ const projects = [
     label: "Negeri Tuhaha",
     project: "Tuhaha.id",
     description: "Official government website, live & production, real client",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["CSS", "React Js"],
     img: img1,
     link : 'https://tuhaha.id'
   },
@@ -18,7 +18,7 @@ const projects = [
     label: "Nengnanum Beauty",
     project: "Nengnanum Beauty",
     description: "Skincare brand multi-page React, GSAP, Lenis",
-    tech: ["React", "GSAP", "WebGL"],
+    tech: ['CSS', "React", "GSAP", "WebGL"],
     img: img2,
     link : 'https://achel-sahe.github.io/skincare-website-nengnanum-beauty/'
   },
